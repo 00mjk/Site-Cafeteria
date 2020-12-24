@@ -1,0 +1,261 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.hamburger{
+    display: block;
+    background: #573000;
+    width: 30px;
+    height: 3px;
+    position: relative;
+    z-index: 3;
+}
+
+
+.hamburger:before, .hamburger:after{
+    background: #573000;
+    content:"";
+    display: block;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    transition: .5s;
+}
+
+
+.hamburger:before{
+    top: -10px;
+}
+
+
+.hamburger:after{
+    bottom: -10px;
+}
+
+
+input{
+    display:none;
+}
+
+
+input:checked ~ label .hamburger{
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+
+input:checked ~ label .hamburger:before{
+    transform: rotate(90deg);
+    top: 0px;
+    background-color: #fff;
+}
+
+
+input:checked ~ label .hamburger:after{
+    transform: rotate(90deg);
+    bottom: 0px;
+    background-color: #fff;
+}
+
+
+header h1, .menu{
+    height: 80px;
+    line-height: 80px;
+    color: #573000;
+}
+
+
+header h1{
+    padding-left: 25px;
+    letter-spacing: 7px;
+}
+
+
+header p{
+    margin-left: 25px;
+    letter-spacing: 2px;
+    color: #573000;
+    margin-top: -50px;
+}
+
+
+header .menu{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 40px;
+    margin-top: -41px;
+}
+
+
+header nav ul{
+   width: 100%;
+   height: 100vh;
+   background-color: #573000;
+   transition: .5s;
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: -37%;
+   justify-content: center;
+   left: -100%;
+   z-index: 2;
+}
+
+
+header nav ul li{
+    padding: 20px;
+}
+
+
+header nav ul li a{
+    font-size: 25px;
+    color: #fff;
+}
+
+
+#menu-hamburger:checked ~ ul{
+    left: 0;
+}
+
+
+.gallery{
+    max-width: 100vh;
+    margin-top: 20px;
+}
+
+
+.titulo{
+    position: absolute;
+    padding-top: 160px;
+    z-index: 1;
+    color: #fff;
+    padding-left: 25px;
+}
+
+
+.titulo h3{
+    font-size: 40px;
+}
+
+.titulo span{
+    font-size: 30px;
+    font-family: Dancing Script;
+}
+
+
+main .principal article .s{
+    font-size: 30px;
+    font-family: Dancing Script;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    color: #573000;
+}
+
+
+.principal{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.principal article h2{
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: #573000;    
+    padding-bottom: 20px;
+}
+
+
+.principal article img{
+    width: 100%;
+}
+
+
+main .principal article p{
+    padding-top: 40px;
+    line-height: 30px;
+    color: #573000;
+}
+
+
+footer .imagem{
+    margin-top: 60px;
+    width: 100%;
+    height: 320px;
+    background-image: url('../Imagens/imagem-do-rodape.jpg');
+    background-repeat: no-repeat;
+}
+
+
+footer .imagem a{
+    color: #fff;
+    font-size: 120px;
+    margin-top: 225px;
+}
+
+
+footer .imagem span{
+    display: flex;
+    justify-content: center;
+}
+
+
+footer .contato{
+    width: 100%;
+    height: 320px;
+    background-color: #573000;
+}
+
+
+footer .contato article{
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer .contato article p{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 45px;
+}
+
+
+footer .contato article form .con{
+    padding: 10px;
+    background-color: #573000;
+    font-size: 17px;
+    border: 3px solid #fff;
+    display: block;
+    width: 95%;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+footer .contato .social{
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer .contato .social a{
+    color: #fff;
+    padding: 0 15px;
+    font-size: 30px;
+}
+
+
