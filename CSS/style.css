@@ -280,7 +280,7 @@ footer .contato .social a{
 }
 
 
-@media (min-width: 200px) and (orientation:landscape){
+@media (max-width: 768px) and (orientation:landscape){
 
     header h1{
         font-size: 40px;
@@ -360,6 +360,18 @@ footer .contato .social a{
     }
 
 
+    /* Pagina Produtos */
+    main .tp{
+        font-size: 40px !important;
+        letter-spacing: 6px;
+    }
+
+    main .produtos .Linha article h1, main .produtos .Linha article span{
+        font-size: 35px !important;
+    }
+
+    /* Fim */
+
     footer .imagem{
         margin-top: 60px;
         width: 100%;
@@ -414,8 +426,8 @@ footer .contato .social a{
 
 
     header .links-pc article a{
-        font-size: 37px;
-        padding: 15px;
+        font-size: 30px;
+        padding: 10px;
         color: #573000;
     }
 
@@ -496,6 +508,50 @@ footer .contato .social a{
         font-size: 22px;
     }
 
+    /* Pagina Biografia */ 
+
+    main h4{
+        font-size: 60px !important;
+        letter-spacing: 9px !important;
+        margin-top: 90px !important;
+        margin-bottom: 70px !important;
+
+    }
+
+    /* Pagina Produtos */
+
+    main .tp{
+        font-size: 60px !important;
+        margin-top: 70px !important;
+        margin-bottom: 90px !important;
+        letter-spacing: 9px;
+    }
+
+
+    main .produtos{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    main .produtos .Linha{
+        display: flex;
+    }
+
+
+    main .produtos .Linha article{
+        margin: 20px;
+    }
+
+
+    main .produtos .Linha article h1{
+        text-align: center;
+    }
+
+
+    /* Fim */
+
 
     footer .imagem{
         width: 100vw;
@@ -550,5 +606,98 @@ footer .contato .social a{
 
 }
 
+/* Fim */
+
+
+
+/* Pagina Produtos */
+main .tp{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #573000;
+}
+
+
+main .produtos{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main .produtos .Linha article{
+    border: 1px solid #573000;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .produtos .Linha article img{
+    width: 75%;
+}
+
+
+main .produtos .Linha article h1{
+    font-size: 22px;
+    color: #573000;
+}
+
+main .produtos .Linha article span{
+    font-size: 22px;
+}
 
 /* Fim */
+
+
+/* Pagina Biografia */
+
+main h4{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #573000;
+}
+
+
+main .biografia{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main .biografia p{
+    color: #573000;
+    text-align: center;
+}
+
+/* Fim */
+
+
+/* Localização */
+main .ifram{
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .ifram article p{
+    text-align: center;
+    color: #573000;
+    margin-top: 40px;
+}
+
+article iframe{
+    width: 100%;
+    height: 400px;
+}
+
+
+
